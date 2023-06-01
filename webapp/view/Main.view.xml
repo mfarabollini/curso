@@ -1,0 +1,20 @@
+<mvc:View controllerName="exaccs.curso.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <IconTabBar id="idIconTabBarNoIcons" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
+                <items>
+                    <IconTabFilter text="Clase 2" key="clase2">
+                        <mvc:XMLView viewName="exaccs.curso.view.Clase2" />
+
+                    </IconTabFilter>
+                    <IconTabFilter text="Clase 3" key="clase3">
+                        <mvc:XMLView viewName="exaccs.curso.view.Clase3" />
+                    </IconTabFilter>
+
+                </items>
+            </IconTabBar>
+        </content>
+    </Page>
+</mvc:View>

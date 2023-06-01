@@ -1,0 +1,6 @@
+<mvc:View controllerName="exaccs.curso.controller.Clase3"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Panel  headerText="{i18n>pnlClase3}">
+    </Panel>
+</mvc:View>

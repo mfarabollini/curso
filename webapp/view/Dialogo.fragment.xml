@@ -1,0 +1,13 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" displayBlock="true"
+    xmlns="sap.m">
+
+    <Dialog id="dlgHola" title="Hola {nombre>/data/nombre}">
+        <content>
+            <core:Icon src="sap-icon://sap-ui5" color="red" size="10rem" class="sapUiSmallMargin" />
+        </content>
+        <beginButton>
+            <Button text="Ok" press=".closeDialogo" />
+        </beginButton>
+    </Dialog>
+
+</core:FragmentDefinition>

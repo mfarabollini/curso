@@ -1,0 +1,47 @@
+<mvc:View controllerName="exaccs.curso.controller.Clase2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Panel headerText="{i18n>pnlClase2}">
+        <headerToolbar>
+            <OverflowToolbar>
+                <Title text="Hello World"/>
+                <ToolbarSpacer />
+                <Button text="Dialogo" icon="sap-icon://sap-ui5" press=".openDialogoHola" class="sapUiSmallMargin"></Button>
+            </OverflowToolbar>
+        </headerToolbar>
+        <content>
+            <Button icon="sap-icon://action" text="Dialogo" press=".openDialogoHola" class="sapUiSmallMarginEnd"/>
+            <Button text="Hola Mundo" press=".holaMundo" class="sapUiSmallMarginEnd"/>
+            <Input value="{nombre>/data/nombre}" width="50%" valueLiveUpdate="true"/>
+            <Text id="texto" text="{nombre>/data/nombre}" class="sapUiTinyMargin negrita"/>
+        </content>
+    </Panel>
+
+    <Panel headerText="{i18n>pnlLista}" class="sapUiSmallMarginTop">
+        <List id="invoices" items="{ path: 'nw>/Invoices',
+                                     sorter: {path: 'CustomerName',
+                                              group: true }
+                                    }" 
+                                    growing="true" 
+                                    growingThreshold="10" 
+                                    growingScrollToLoad="false">
+            <headerToolbar >
+                <Toolbar >
+                    <Title text="{i18n>listInvoices}"></Title>
+                    <ToolbarSpacer/>
+                    <SearchField width="50%" search="filterInvoices"/>
+                </Toolbar>
+            </headerToolbar>
+            <items>
+                <ObjectListItem title="{nw>Quantity} x {nw>ProductName}" number="{nw>UnitPrice}" numberUnit="USD" numberState="{= ${nw>UnitPrice} > 50 ? 'Success' : 'Error'}">
+                    <firstStatus>
+                        <ObjectStatus text="{
+                                                    path: 'nw>Discount',
+                                                    formatter: '.formatter.discount'}"></ObjectStatus>
+                    </firstStatus>
+                    <ObjectAttribute title= "Orden" text="{nw>OrderID}"/>
+                </ObjectListItem>
+            </items>
+        </List>
+    </Panel>
+</mvc:View>
