@@ -99,8 +99,28 @@
           "target": [
             "TargetMain"
           ]
-        }
-      ],
+        },
+        {
+          "name": "detCustomer",
+          "pattern": "detail/{customerId}",
+          "target": [
+            "CustomerDetail"
+          ]
+        },
+        {
+          "name": "stdList",
+          "pattern": "standard",
+          "target": [
+            "StandardList"
+          ]
+        }, 
+        {
+          "name": "table",
+          "pattern": "table",
+          "target": [
+            "Table"
+          ]
+        }      ],
       "targets": {
         "TargetMain": {
           "viewType": "XML",
@@ -108,6 +128,27 @@
           "clearControlAggregation": false,
           "viewId": "Main",
           "viewName": "Main"
+        },
+        "CustomerDetail": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Detail",
+          "viewName": "clase3/Detail"
+        },
+        "StandardList": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "StandardList",
+          "viewName": "clase3/StandardList"
+        },
+        "Table": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Table",
+          "viewName": "clase3/Tabla"
         }
       }
     },

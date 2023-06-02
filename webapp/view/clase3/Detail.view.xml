@@ -1,0 +1,90 @@
+<mvc:View controllerName="exaccs.curso.controller.clase3.Detail"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+
+    <Page>
+        <customHeader>
+            <Bar >
+                <contentLeft>
+                    <Button icon="sap-icon://nav-back" press="onBack"></Button>
+                </contentLeft>
+                <contentMiddle>
+                    <Text text="{i18n>detCustomer} - {nw>CustomerID}"></Text>
+                </contentMiddle>
+            </Bar>
+        </customHeader>
+
+        <Panel headerText="{i18n>pnlDetail}" class="sapUiSmallMargin" width="40%">
+
+            <HBox width="80%">
+                <Label text="{i18n>idCustomer}" textAlign="Right" class="sapUiTinyMargin" />
+                <Text text="{nw>CustomerID}" class="sapUiTinyMargin"/>
+            </HBox>
+
+            <HBox width="80%">
+                <Label text="{i18n>nameCustomer}" textAlign="Right" class="sapUiTinyMargin" />
+                <Text text="{nw>CompanyName}" class="sapUiTinyMargin"/>
+            </HBox>
+
+            <HBox width="80%">
+                <Label text="{i18n>adrCustomer}" textAlign="Right" class="sapUiTinyMargin"/>
+                <Text text="{nw>Address}" class="sapUiTinyMargin"/>
+            </HBox>
+
+            <HBox width="80%">
+                <Label text="{i18n>cityCustomer}" textAlign="Right" class="sapUiTinyMargin"/>
+                <Text text="{nw>City}" class="sapUiTinyMargin"/>
+            </HBox>
+
+        </Panel>
+        <Panel width="80%">
+                    <Table id="Orders" items="{nw>/Orders}">
+                <columns>
+                    <Column >
+                        <header>
+                            <Label text="{i18n>OrderID}"></Label>
+                        </header>
+                    </Column>
+                    <Column >
+                        <header>
+                            <Label text="{i18n>OrderDate}"></Label>
+                        </header>
+                    </Column>
+                    <Column >
+                        <header>
+                            <Label text="{i18n>Freight}"></Label>
+                        </header>
+                    </Column>
+                    <Column >
+                        <header>
+                            <Label text="{i18n>ShipName}"></Label>
+                        </header>
+                    </Column>
+                    <Column >
+                        <header>
+                            <Label text="{i18n>ShipAddress}"></Label>
+                        </header>
+                    </Column>
+                    <Column >
+                        <header>
+                            <Label text="{i18n>ShipCity}"></Label>
+                        </header>
+                    </Column>
+                </columns>
+                <items >
+                    <ColumnListItem type="Detail">
+                        <cells>
+                            <Label text="{nw>OrderID}"></Label>
+                            <Label text="{ path: 'nw>OrderDate', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'dd/MM/yyyy' } }"></Label>
+                            <Label text="{nw>Freight}"></Label>
+                            <Label text="{nw>ShipName}"></Label>
+                            <Label text="{nw>ShipAddress}"></Label>
+                            <Label text="{nw>ShipCity}"></Label>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </Panel>
+
+    </Page>
+</mvc:View>

@@ -6,7 +6,7 @@ sap.ui.define(
   ["sap/ui/core/UIComponent", 
   "sap/ui/Device", 
   "exaccs/curso/model/models",
-  "./controller/DialogoHola"
+  "./controller/clase2/DialogoHola"
 ],
   function (UIComponent, Device, models, DialogoHola) {
     "use strict";

@@ -1,0 +1,65 @@
+<mvc:View controllerName="exaccs.curso.controller.clase3.Clase3"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+
+    <Page >
+        <customHeader>
+            <Bar >
+                <contentLeft>
+                    <Button icon="sap-icon://nav-back" press="onBack"></Button>
+                </contentLeft>
+                <contentMiddle>
+                    <Text text="{i18n>tabla}"></Text>
+                </contentMiddle>
+            </Bar>
+        </customHeader>
+        <Panel headerText="{i18n>tabla}" class="sapUiSmallMarginTop">
+            <Table id="tblCustomers" items="{nw>/Customers}" mode="Delete">
+                <columns>
+                    <Column >
+                        <header>
+                            <Label text="{i18n>CustomerID}"></Label>
+                        </header>
+                    </Column>
+                    <Column >
+                        <header>
+                            <Label text="{i18n>CompanyName}"></Label>
+                        </header>
+                    </Column>
+                    <Column >
+                        <header>
+                            <Label text="{i18n>ContactName}"></Label>
+                        </header>
+                    </Column>
+                    <Column >
+                        <header>
+                            <Label text="{i18n>ContactTitle}"></Label>
+                        </header>
+                    </Column>
+                    <Column >
+                        <header>
+                            <Label text="{i18n>Phone}"></Label>
+                        </header>
+                    </Column>
+                    <Column >
+                        <header>
+                            <Label text="{i18n>Fax}"></Label>
+                        </header>
+                    </Column>
+                </columns>
+                <items >
+                    <ColumnListItem type="Navigation" press="navToDetail" >
+                        <cells>
+                            <Label text="{nw>CustomerID}"></Label>
+                            <Label text="{nw>CompanyName}"></Label>
+                            <Label text="{nw>ContactName}"></Label>
+                            <Label text="{nw>ContactTitle}"></Label>
+                            <Label text="{nw>Phone}"></Label>
+                            <Label text="{nw>Fax}"></Label>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </Panel>
+    </Page>
+</mvc:View>

@@ -4,7 +4,7 @@ sap.ui.define([
 ], function(ManagedObject, Fragment) {
     'use strict';
     
-    return ManagedObject.extend("exaccs.curso.controller.Dialogohola", {
+    return ManagedObject.extend("exaccs.curso.controller.clase2.Dialogohola", {
         constructor: function (oView) {
             this._oView = oView;
         },
@@ -25,7 +25,7 @@ sap.ui.define([
             if (!oView.byId("dlgHola")) {
                 Fragment.load({
                     id: oView.getId(),
-                    name: "exaccs.curso.view.Dialogo",
+                    name: "exaccs.curso.view.clase2.Dialogo",
                     controller: oFragmentController
                 }).then(function (oDialog) {
                     oView.addDependent(oDialog);

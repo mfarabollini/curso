@@ -1,6 +1,7 @@
-<mvc:View controllerName="exaccs.curso.controller.Clase2"
+<mvc:View controllerName="exaccs.curso.controller.clase2.Clase2"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
+
     <Panel headerText="{i18n>pnlClase2}">
         <headerToolbar>
             <OverflowToolbar>
@@ -21,10 +22,7 @@
         <List id="invoices" items="{ path: 'nw>/Invoices',
                                      sorter: {path: 'CustomerName',
                                               group: true }
-                                    }" 
-                                    growing="true" 
-                                    growingThreshold="10" 
-                                    growingScrollToLoad="false">
+                                    }" growing="true" growingThreshold="10" growingScrollToLoad="false">
             <headerToolbar >
                 <Toolbar >
                     <Title text="{i18n>listInvoices}"></Title>

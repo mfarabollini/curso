@@ -1,0 +1,10 @@
+<mvc:View controllerName="exaccs.curso.controller.clase3.Clase3"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Panel headerText="{i18n>pnlListaC3}">
+
+        <Button text="Standard List" class="sapUiSmallMargin" press="navToStandard"/>
+        <Button text="Tabla" class="sapUiSmallMargin"  press="navToTabla"/>
+
+    </Panel>
+</mvc:View>

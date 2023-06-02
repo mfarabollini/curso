@@ -2,7 +2,7 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/m/MessageToast",
-    "../model/Formatter",
+    "../../model/Formatter",
     "sap/ui/model/Filter",
     "sap/ui/model/FilterOperator",
 ],
@@ -15,7 +15,7 @@ sap.ui.define([
     function (Controller, MessageToast, Formatter, Filter,FilterOperator) {
         "use strict";
 
-        return Controller.extend("exaccs.curso.controller.Clase2", {
+        return Controller.extend("exaccs.curso.controller.clase.Clase2", {
             formatter: Formatter,
             onInit: function () {
 

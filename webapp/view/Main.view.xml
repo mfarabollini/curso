@@ -6,11 +6,11 @@
             <IconTabBar id="idIconTabBarNoIcons" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
                 <items>
                     <IconTabFilter text="Clase 2" key="clase2">
-                        <mvc:XMLView viewName="exaccs.curso.view.Clase2" />
+                        <mvc:XMLView viewName="exaccs.curso.view.clase2.Clase2" />
 
                     </IconTabFilter>
                     <IconTabFilter text="Clase 3" key="clase3">
-                        <mvc:XMLView viewName="exaccs.curso.view.Clase3" />
+                        <mvc:XMLView viewName="exaccs.curso.view.clase3.Clase3" />
                     </IconTabFilter>
 
                 </items>

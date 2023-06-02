@@ -1,0 +1,33 @@
+<mvc:View controllerName="exaccs.curso.controller.clase3.Clase3"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+
+    <Page >
+        <customHeader>
+            <Bar >
+                <contentLeft>
+                    <Button icon="sap-icon://nav-back" press="onBack"></Button>
+                </contentLeft>
+                <contentMiddle>
+                    <Text text="{i18n>standard}"></Text>
+                </contentMiddle>
+            </Bar>
+        </customHeader>
+        <Panel headerText="{i18n>standard}" class="sapUiSmallMarginTop">
+
+
+            <List id="customer" items="{nw>/Customers}" growing="true" growingThreshold="10" growingScrollToLoad="false">
+
+                <items>
+                    <StandardListItem 
+                        type="Navigation" 
+                        title="{nw>CustomerID}" 
+                        description="{nw>CompanyName}" 
+                        info="{nw>Address} - {nw>City}" 
+                        press="navToDetail">
+                    </StandardListItem>
+                </items>
+            </List>
+        </Panel>
+    </Page>
+</mvc:View>
