@@ -6,6 +6,7 @@ sap.ui.define([
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      * @param {typeof sap.ui.core.routing.History} History
      */
+    
     function (Controller, History) {
         "use strict";
 

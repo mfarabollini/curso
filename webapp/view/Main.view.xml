@@ -12,7 +12,7 @@
                     <IconTabFilter text="Clase 3" key="clase3">
                         <mvc:XMLView viewName="exaccs.curso.view.clase3.Clase3" />
                     </IconTabFilter>
-
+                    
                 </items>
             </IconTabBar>
         </content>

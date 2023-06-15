@@ -9,7 +9,8 @@ sap.ui.define(function () {
             } else {
                 return "Descuento: " + sDiscount * 100 + "%";
             }
-        }
+        },
+
     };
 
     return Formatter;
